@@ -16,7 +16,7 @@ fn main() {
         return;
     }
 
-    convert(read(input_path).expect("error reading input file"))
+    convert(read(input_path).expect("Error reading input file!"))
         .save(input_path.replace(".pdf", ".png"))
-        .expect("error saving output file");
+        .expect("Error saving output file!");
 }
